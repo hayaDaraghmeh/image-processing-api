@@ -106,7 +106,18 @@ npm run test
 ```
 
 ---
+## Lint the code
 
+```bash
+npm run lint
+```
+---
+## Format the code
+
+```bash
+npm run format
+```
+---
 ## Project Structure
 
 ```
@@ -123,7 +134,9 @@ assets
  └ thumb
 
 tests
- └ serverSpec.ts
+ ├ serverSpec.ts
+ └ imageProcessingSpec.ts
+
 ```
 
 ---
