@@ -1,13 +1,12 @@
-import sharp from 'sharp'
+import sharp from 'sharp';
 
 const resizeImage = async (
   input: string,
   output: string,
   width: number,
-  height: number
+  height: number,
 ) => {
-  await sharp(input).resize(width, height).toFile(output)
-}
+  await sharp(input).resize(width, height).toFile(output);
+};
 
-export default resizeImage
-
+export default resizeImage;

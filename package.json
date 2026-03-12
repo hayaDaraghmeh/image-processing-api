@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- "scripts": {
-  "start": "node dist/src/index.js",
-  "build": "tsc",
-  "test": "npm run build && jasmine"
+  "scripts": {
+    "start": "node dist/src/index.js",
+    "build": "tsc",
+    "test": "npm run build && jasmine",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
   },
   "keywords": [],
   "author": "",
@@ -20,6 +22,8 @@
     "@types/jasmine": "^6.0.0",
     "@types/node": "^25.3.3",
     "@types/supertest": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.57.0",
+    "@typescript-eslint/parser": "^8.57.0",
     "eslint": "^10.0.2",
     "jasmine": "^6.1.0",
     "jasmine-ts": "^0.4.0",

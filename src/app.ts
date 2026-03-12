@@ -1,12 +1,12 @@
-import express from 'express'
-import imageRoutes from './routes/imageRoutes'
+import express from 'express';
+import imageRoutes from './routes/imageRoutes';
 
-const app = express()
+const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Server is running')
-})
+  res.send('Server is running');
+});
 
-app.use('/api', imageRoutes)
+app.use('/api', imageRoutes);
 
-export default app
+export default app;
